@@ -8,7 +8,7 @@ export default function AdminOnly() {
         <main className="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-6 lg:px-8">
           <div className="flex flex-shrink-0 justify-center">
             <a href="/" className="inline-flex">
-              <img className="h-12 w-auto" src="https://res.cloudinary.com/dejvlvhlp/image/upload/v1682929205/shopping-cart_mst7de.png" alt="i-novotek logo" />
+              <img className="h-6  w-auto" src="https://res.cloudinary.com/dejvlvhlp/image/upload/v1682929205/shopping-cart_mst7de.png" alt="i-novotek logo" />
             </a>
           </div>
           <div className="py-16">
