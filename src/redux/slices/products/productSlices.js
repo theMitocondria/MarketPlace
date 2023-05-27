@@ -92,7 +92,6 @@ export const updateProductAction = createAsyncThunk(
         totalQty,
         id,
       } = payload;
-
       const token = getState()?.users?.userAuth?.userInfo?.token;
       const config = {
         headers: {
@@ -134,7 +133,7 @@ export const fetchProductsAction = createAsyncThunk(
         },
       };
 
-      const { data } = await axios.get(`${baseURL}/product/all`, config);
+      const { data } = await axios.get(`${url}`, config);
       return data;
     } catch (error) {
       return rejectWithValue(error?.response?.data);

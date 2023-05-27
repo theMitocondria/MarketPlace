@@ -36,10 +36,9 @@ export const createCategoryAction = createAsyncThunk(
           Authorization: `Bearer ${token}`,
         },
       };
-   
       //Images
       const { data } = await axios.post(
-        `${baseURL}/category/create`,
+        `${baseURL}/categories`,
         formData,
         config
       );
@@ -55,13 +54,7 @@ export const fetchCategoriesAction = createAsyncThunk(
   "category/fetch All",
   async (payload, { rejectWithValue, getState, dispatch }) => {
     try {
-      const token = getState()?.users?.userAuth?.userInfo?.token;
-      const config = {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      };
-      const { data } = await axios.get(`${baseURL}/category/all`,config);
+      const { data } = await axios.get(`${baseURL}/categories`);
       return data;
     } catch (error) {
       return rejectWithValue(error?.response?.data);
