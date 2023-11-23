@@ -54,6 +54,7 @@ export default function CategoryToAdd() {
       {error && <ErrorComponent message={error?.message} />}
       {fileErr && <ErrorComponent message={fileErr} />}
       {isAdded && <SuccessMsg message="Category added successfully" />}
+      {/* {isAdded ? ()=>{window.location.reload();console.log("my name is category")}:console.log("my name is allo")} */}
       <div className="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <svg

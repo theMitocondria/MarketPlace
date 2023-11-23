@@ -6,6 +6,8 @@ const SuccessMsg = ({ message }) => {
     title: "Good job!",
     text: message,
   });
+  window.location.reload();
 };
+
 
 export default SuccessMsg;

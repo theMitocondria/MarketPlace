@@ -11,6 +11,7 @@ const ErrorMsg = ({ message }) => {
     text: message,
   });
   dispatch(resetErrAction());
+  // window.location.reload();
 };
 
 export default ErrorMsg;

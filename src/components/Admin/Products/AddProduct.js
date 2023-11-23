@@ -108,6 +108,7 @@ export default function AddProduct() {
     e.preventDefault();
     console.log(fileErrs);
     //dispatch
+    console.log(formData);
     dispatch(
       createProductAction({
         ...formData,
